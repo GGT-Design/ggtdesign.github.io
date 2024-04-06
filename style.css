@@ -101,14 +101,14 @@
 .frame1 {
   width: 223px;
   height: 456px;
-  background-image: url('assets/bild1.jpg');
+  background-image: url('assets/bild1.png');
   margin-right: 12px;
 }
 
 .frame2 {
   width: 223px;
   height: 456px;
-  background-image: url('assets/bild2.jpg');
+  background-image: url('assets/bild2.png');
   margin-top: 56px;
   margin-left: 12px;
 }
