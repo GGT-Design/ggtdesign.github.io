@@ -27,7 +27,7 @@
 .logo {
   width: 48px;
   height: 48px;
-  background-image: url('/assets/logo.svg/');
+  background-image: url('assets/logo.svg/');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -38,7 +38,7 @@
 .mail {
   width: 28px;
   height: 28px;
-  background-image: url('/assets/mail.svg/');
+  background-image: url('assets/mail.svg/');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -50,7 +50,7 @@
 .phone {
   width: 22px;
   height: 22px;
-  background-image: url('/assets/phone.svg/');
+  background-image: url('assets/phone.svg/');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -101,14 +101,14 @@
 .frame1 {
   width: 223px;
   height: 456px;
-  background-image: url('/assets/bild1.jpg/');
+  background-image: url('assets/bild1.jpg/');
   margin-right: 12px;
 }
 
 .frame2 {
   width: 223px;
   height: 456px;
-  background-image: url('/assets/bild2.jpg/');
+  background-image: url('assets/bild2.jpg/');
   margin-top: 56px;
   margin-left: 12px;
 }
