@@ -90,6 +90,20 @@
   margin-left: 480px;
 }
 
+.profilbild {
+  width: 128px;
+  height: 128px;
+  background-image: url('assets/bild.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 512px;
+  left: 0;
+  right: 288px;
+}
+
 .frames {
   display: flex;
   position: relative;
