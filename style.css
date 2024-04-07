@@ -6,11 +6,11 @@
 }
 
 .leiste {
-  width: 420px;
+  width: 320px;
   height: 28px;
   background-color: #c9c9c9;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(4, auto);
   border-radius: 8px;
   align-items: center;
   justify-items: center;
