@@ -56,15 +56,21 @@ body {
   left: 28px;
 }
 
+.info-container {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  top: 14px;
+  right: 28px;
+}
+
 .mail {
   width: 28px;
   height: 28px;
   background-image: url('assets/mail.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-  top: 14px;
-  right: 64px;
+  margin-right: 12px;
   cursor: pointer;
 }
 
@@ -74,9 +80,6 @@ body {
   background-image: url('assets/phone.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-  top: 14px;
-  right: 28px;
   cursor: pointer;
 }
 
