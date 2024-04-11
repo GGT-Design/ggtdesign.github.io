@@ -453,9 +453,8 @@ body {
 
   .frames {
     display: flex;
-    justify-content: right;
-    margin-top: -342px;
-    margin-right: 48px;
+    justify-content: center;
+    margin-top: 128px;
   }
 
     .frame1 {
