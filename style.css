@@ -397,6 +397,14 @@ body {
     top: 14px;
     left: 28px;
   }
+
+    .info-container {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    top: 14px;
+    right: 28px;
+  }
   
   .mail {
     width: 28px;
