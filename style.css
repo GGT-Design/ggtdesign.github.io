@@ -460,7 +460,7 @@ body {
     background-image: url('assets/bild.png');
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: -748px;
+    margin-top: -768px;
     margin-left: 296px;
   }
 
@@ -474,6 +474,8 @@ body {
     width: 223px;
     height: 456px;
     background-image: url('assets/bild1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-right: 12px;
   }
   
@@ -481,6 +483,8 @@ body {
     width: 223px;
     height: 456px;
     background-image: url('assets/bild2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-top: 56px;
     margin-left: 12px;
   }
