@@ -1,0 +1,539 @@
+body {
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.menu-leiste {
+  width: 320px;
+  height: 28px;
+  background-color: #c9c9c9;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  border-radius: 8px;
+  align-items: center;
+  justify-items: center;
+}
+
+.menu-button {
+  font-family: raleway;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background-image: url('assets/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 14px;
+  left: 28px;
+}
+
+.mail {
+  width: 28px;
+  height: 28px;
+  background-image: url('assets/mail.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 14px;
+  right: 64px;
+  cursor: pointer;
+}
+
+.phone {
+  width: 22px;
+  height: 22px;
+  background-image: url('assets/phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 14px;
+  right: 28px;
+  cursor: pointer;
+}
+
+.tooltip {
+  width: 28px;
+  height: 28px;
+}
+
+.tooltipText {
+  visibility: hidden;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.tooltip:hover .tooltipText{
+  position: absolute;
+  visibility: visible;
+  top: calc(100% + 10px);
+  transform: translateX(-80%);
+}
+
+.titel-startseite {
+  font-family: berkshire swash;
+  font-size: 38px;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.leiste {
+  width: 540px;
+  height: 41px;
+  background-image: url('assets/leiste.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  text-align: center;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titel-portfolio,
+.titel-dienste,
+.titel-preise,
+.titel-agb,
+.titel-datenschutz,
+.titel-impressum {
+  font-family: raleway;
+  font-size: 38px;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.name {
+  font-family: raleway;
+  font-size: 26px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: left;
+  color: #c70000;
+  margin-top: 96px;
+  margin-left: 480px;
+}
+
+.beschreibung {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 56px;
+  margin-left: 480px;
+}
+
+.profilbild {
+  width: 128px;
+  height: 128px;
+  background-image: url('assets/bild.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -296px;
+  margin-left: 744px;
+}
+
+.frames {
+  display: flex;
+  position: relative;
+  justify-content: right;
+  margin-top: -342px;
+  margin-right: 480px;
+}
+
+.frame1 {
+  width: 223px;
+  height: 456px;
+  background-image: url('assets/bild1.jpg');
+  margin-right: 12px;
+}
+
+.frame2 {
+  width: 223px;
+  height: 456px;
+  background-image: url('assets/bild2.jpg');
+  margin-top: 56px;
+  margin-left: 12px;
+}
+
+.port1 {
+  width: 904px;
+  height: 197px;
+  background-image: url('assets/port1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.port2 {
+  width: 904px;
+  height: 274px;
+  background-image: url('assets/port2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 192px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.port3 {
+  width: 360px;
+  height: 454px;
+  background-image: url('assets/port3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 192px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.port4 {
+  width: 662px;
+  height: 454px;
+  background-image: url('assets/port4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 192px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.beschreibung-dienste {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 64px;
+  margin-left: 480px;
+  line-height: 2;
+}
+
+.beschreibung-preise {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 64px;
+  margin-left: 480px;
+  line-height: 2;
+}
+
+.beschreibung-agb,
+.beschreibung-datenschutz,
+.beschreibung-impressum {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: justify;
+  color: #484848;
+  margin-top: 64px;
+  margin-left: 480px;
+  margin-right: 480px;
+  line-height: 1.5;
+}
+
+.beschreibung2 {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 256px;
+  margin-left: 480px;
+}
+
+.beschreibung3 {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 128px;
+  margin-left: 480px;
+}
+
+.beschreibung4 {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 128px;
+  margin-left: 480px;
+}
+
+.beschreibung5 {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 128px;
+  margin-left: 480px;
+}
+
+.beschreibung6 {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: left;
+  color: #484848;
+  margin-top: 128px;
+  margin-left: 480px;
+}
+
+.copyright {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+  color: #999999;
+  margin-top: 128px;
+}
+
+.rechtliches {
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 56px;
+}
+
+.agb {
+  color: #999999;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.datenschutz {
+  color: #999999;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.impressum {
+  color: #999999;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 1880px) {
+
+  body {
+    min-width: 1000px;
+    background-color: #f5f5f5;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    background-image: url('assets/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 14px;
+    left: 28px;
+  }
+  
+  .mail {
+    width: 28px;
+    height: 28px;
+    background-image: url('assets/mail.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 14px;
+    right: 64px;
+    cursor: pointer;
+  }
+  
+  .phone {
+    width: 22px;
+    height: 22px;
+    background-image: url('assets/phone.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 14px;
+    right: 28px;
+    cursor: pointer;
+  }
+
+  .name {
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: left;
+    color: #c70000;
+    margin-top: 96px;
+    margin-left: 48px;
+  }
+  
+  .beschreibung {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 56px;
+    margin-left: 48px;
+  }
+
+  .profilbild {
+    width: 128px;
+    height: 128px;
+    background-image: url('assets/bild.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -296px;
+    margin-left: 296px;
+  }
+
+  .frames {
+    display: flex;
+    justify-content: right;
+    margin-top: -342px;
+    margin-right: 48px;
+  }
+
+  .beschreibung2 {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 256px;
+    margin-left: 48px;
+  }
+  
+  .beschreibung3 {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 128px;
+    margin-left: 48px;
+  }
+  
+  .beschreibung4 {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 128px;
+    margin-left: 48px;
+  }
+  
+  .beschreibung5 {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 128px;
+    margin-left: 48px;
+  }
+  
+  .beschreibung6 {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 128px;
+    margin-left: 48px;
+  }
+
+  .beschreibung-dienste {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 64px;
+    margin-left: 48px;
+    line-height: 2;
+  }
+  
+  .beschreibung-preise {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+    color: #484848;
+    margin-top: 64px;
+    margin-left: 48px;
+    line-height: 2;
+  }
+  
+  .beschreibung-agb,
+  .beschreibung-datenschutz,
+  .beschreibung-impressum {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: justify;
+    color: #484848;
+    margin-top: 64px;
+    margin-left: 48px;
+    margin-right: 48px;
+    line-height: 1.5;
+  }
+}
