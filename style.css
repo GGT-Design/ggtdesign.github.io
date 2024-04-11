@@ -383,6 +383,7 @@ body {
 @media (max-width: 1880px) {
 
   body {
+    min-width: 1170px;
     background-color: #f5f5f5;
   }
 
