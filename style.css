@@ -14,6 +14,7 @@
 }
 
 body {
+  min-width: 1170px;
   background-color: #f5f5f5;
   overflow-x: hidden;
 }
@@ -385,6 +386,7 @@ body {
   body {
     min-width: 1170px;
     background-color: #f5f5f5;
+    overflow-x: hidden;
   }
 
   .logo {
