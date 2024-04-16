@@ -14,7 +14,7 @@
 }
 
 body {
-  min-width: 1170px;
+  width: 100%;
   background-color: #f5f5f5;
   overflow-x: hidden;
 }
@@ -145,26 +145,22 @@ body {
   margin-top: 80px;
 }
 
+.person-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  text-align: left;
+  line-height: 1.5;
+}
+
 .name {
   font-family: 'raleway';
   font-size: 26px;
   font-weight: 600;
-  justify-content: center;
-  text-align: left;
   color: #c70000;
-  margin-top: 96px;
-  margin-left: 480px;
-}
-
-.beschreibung {
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 400;
-  justify-content: center;
-  text-align: left;
-  color: #484848;
-  margin-top: 56px;
-  margin-left: 480px;
 }
 
 .profilbild {
@@ -173,16 +169,21 @@ body {
   background-image: url('assets/bild.png');
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: -296px;
-  margin-left: 744px;
+  margin-top: 64px;
+}
+
+.beschreibung {
+  font-family: 'roboto';
+  font-size: 16px;
+  font-weight: 400;
+  color: #484848;
+  margin-top: 64px;
 }
 
 .frames {
   display: flex;
-  position: relative;
-  justify-content: right;
-  margin-top: -342px;
-  margin-right: 480px;
+  justify-content: center;
+  margin-top: 96px;
 }
 
 .frame1 {
@@ -245,6 +246,7 @@ body {
 }
 
 .beschreibung-dienste {
+  max-width: 50%;
   font-family: 'roboto';
   font-size: 16px;
   font-weight: 400;
@@ -252,11 +254,13 @@ body {
   text-align: left;
   color: #484848;
   margin-top: 64px;
-  margin-left: 480px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 2;
 }
 
 .beschreibung-preise {
+  max-width: 50%;
   font-family: 'roboto';
   font-size: 16px;
   font-weight: 400;
@@ -264,13 +268,15 @@ body {
   text-align: left;
   color: #484848;
   margin-top: 64px;
-  margin-left: 480px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 2;
 }
 
 .beschreibung-agb,
 .beschreibung-datenschutz,
 .beschreibung-impressum {
+  max-width: 80%;
   font-family: 'roboto';
   font-size: 16px;
   font-weight: 400;
@@ -278,64 +284,31 @@ body {
   text-align: justify;
   color: #484848;
   margin-top: 64px;
-  margin-left: 480px;
-  margin-right: 480px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.5;
 }
 
-.beschreibung2 {
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 400;
+.beschreibungen {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: left;
-  color: #484848;
-  margin-top: 256px;
-  margin-left: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
 }
 
-.beschreibung3 {
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 400;
-  justify-content: center;
-  text-align: left;
-  color: #484848;
-  margin-top: 128px;
-  margin-left: 480px;
-}
-
-.beschreibung4 {
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 400;
-  justify-content: center;
-  text-align: left;
-  color: #484848;
-  margin-top: 128px;
-  margin-left: 480px;
-}
-
-.beschreibung5 {
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 400;
-  justify-content: center;
-  text-align: left;
-  color: #484848;
-  margin-top: 128px;
-  margin-left: 480px;
-}
-
+.beschreibung2,
+.beschreibung3,
+.beschreibung4,
+.beschreibung5,
 .beschreibung6 {
   font-family: 'roboto';
   font-size: 16px;
   font-weight: 400;
-  justify-content: center;
-  text-align: left;
   color: #484848;
-  margin-top: 128px;
-  margin-left: 480px;
+  margin-top: 64px;
 }
 
 .copyright {
@@ -379,207 +352,4 @@ body {
   justify-content: center;
   text-align: center;
   cursor: pointer;
-}
-
-@media (max-width: 1880px) {
-
-  body {
-    min-width: 1170px;
-    background-color: #f5f5f5;
-    overflow-x: hidden;
-  }
-
-  .logo {
-    width: 48px;
-    height: 48px;
-    background-image: url('assets/logo.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 14px;
-    left: 28px;
-  }
-
-    .info-container {
-    position: absolute;
-    display: flex;
-    justify-content: right;
-    top: 14px;
-    right: 28px;
-  }
-  
-  .mail {
-    width: 28px;
-    height: 28px;
-    background-image: url('assets/mail.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 14px;
-    right: 64px;
-    cursor: pointer;
-  }
-  
-  .phone {
-    width: 22px;
-    height: 22px;
-    background-image: url('assets/phone.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 14px;
-    right: 28px;
-    cursor: pointer;
-  }
-
-  .name {
-    font-family: 'raleway';
-    font-size: 26px;
-    font-weight: 600;
-    justify-content: center;
-    text-align: left;
-    color: #c70000;
-    margin-top: 96px;
-    margin-left: 48px;
-  }
-  
-  .beschreibung {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 56px;
-    margin-left: 48px;
-  }
-
-  .profilbild {
-    width: 128px;
-    height: 128px;
-    background-image: url('assets/bild.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: -748px;
-    margin-left: 296px;
-  }
-
-  .frames {
-    display: flex;
-    justify-content: center;
-    margin-top: 128px;
-  }
-
-    .frame1 {
-    width: 223px;
-    height: 456px;
-    background-image: url('assets/bild1.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 12px;
-  }
-  
-  .frame2 {
-    width: 223px;
-    height: 456px;
-    background-image: url('assets/bild2.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 56px;
-    margin-left: 12px;
-  }
-
-  .beschreibung2 {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 748px;
-    margin-left: 48px;
-  }
-  
-  .beschreibung3 {
-    font-family: roboto;
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 128px;
-    margin-left: 48px;
-  }
-  
-  .beschreibung4 {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 128px;
-    margin-left: 48px;
-  }
-  
-  .beschreibung5 {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 128px;
-    margin-left: 48px;
-  }
-  
-  .beschreibung6 {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 128px;
-    margin-left: 48px;
-  }
-
-  .beschreibung-dienste {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 64px;
-    margin-left: 48px;
-    line-height: 2;
-  }
-  
-  .beschreibung-preise {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: left;
-    color: #484848;
-    margin-top: 64px;
-    margin-left: 48px;
-    line-height: 2;
-  }
-  
-  .beschreibung-agb,
-  .beschreibung-datenschutz,
-  .beschreibung-impressum {
-    font-family: 'roboto';
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    text-align: justify;
-    color: #484848;
-    margin-top: 64px;
-    margin-left: 48px;
-    margin-right: 48px;
-    line-height: 1.5;
-  }
 }
