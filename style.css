@@ -19,22 +19,21 @@ body {
   overflow-x: hidden;
 }
 
-.menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 14px;
-}
-
 .menu-leiste {
+  max-width: 100%;
   width: 320px;
   height: 28px;
   background-color: #c9c9c9;
   display: grid;
   grid-template-columns: repeat(4, auto);
+  grid-gap: 12px;
   border-radius: 8px;
+  justify-content: center;
   align-items: center;
   justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
 }
 
 .menu-button {
@@ -55,58 +54,6 @@ body {
   position: absolute;
   top: 14px;
   left: 28px;
-}
-
-.info-container {
-  position: absolute;
-  display: flex;
-  justify-content: right;
-  top: 14px;
-  right: 28px;
-}
-
-.mail {
-  width: 28px;
-  height: 28px;
-  background-image: url('assets/mail.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 12px;
-  cursor: pointer;
-}
-
-.phone {
-  width: 22px;
-  height: 22px;
-  background-image: url('assets/phone.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-
-.tooltip {
-  width: 28px;
-  height: 28px;
-}
-
-.tooltipText {
-  visibility: hidden;
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 400;
-  background-color: #000000;
-  text-align: center;
-  color: #ffffff;
-  white-space: nowrap;
-  border-radius: 8px;
-  padding: 10px 15px;
-}
-
-.tooltip:hover .tooltipText{
-  position: absolute;
-  visibility: visible;
-  top: calc(100% + 10px);
-  transform: translateX(-80%);
 }
 
 .titel-startseite {
@@ -182,6 +129,7 @@ body {
 }
 
 .frames {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 96px;
@@ -203,6 +151,7 @@ body {
 }
 
 .port1 {
+  max-width: 100%;
   width: 904px;
   height: 197px;
   background-image: url('assets/port1.png');
@@ -214,6 +163,7 @@ body {
 }
 
 .port2 {
+  max-width: 100%;
   width: 904px;
   height: 274px;
   background-image: url('assets/port2.png');
@@ -225,6 +175,7 @@ body {
 }
 
 .port3 {
+  max-width: 100%;
   width: 360px;
   height: 454px;
   background-image: url('assets/port3.png');
@@ -236,6 +187,7 @@ body {
 }
 
 .port4 {
+  max-width: 100%;
   width: 662px;
   height: 454px;
   background-image: url('assets/port4.png');
@@ -291,12 +243,11 @@ body {
 }
 
 .beschreibungen {
-  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  text-align: center;
   line-height: 1.5;
 }
 
