@@ -119,6 +119,7 @@ body {
 }
 
 .leiste {
+  max-width: 100%;
   width: 540px;
   height: 41px;
   background-image: url('assets/leiste.png');
