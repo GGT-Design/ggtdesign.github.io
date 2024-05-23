@@ -16,6 +16,7 @@
 body {
   width: 100%;
   background: linear-gradient(180deg, #f5f5f5, #d2dce7);
+  cursor: url('assets/cursor.svg'), auto;
   overflow-x: hidden;
 }
 
@@ -54,7 +55,7 @@ body {
   font-weight: 400;
   color: white;
   text-decoration: none;
-  cursor: pointer;
+  cursor: url('assets/cursor.svg'), auto;
 }
 
 .titel-startseite {
@@ -322,21 +323,21 @@ body {
   color: #999999;
   justify-content: center;
   text-align: center;
-  cursor: pointer;
+  cursor: url('assets/cursor.svg'), auto;
 }
 
 .datenschutz {
   color: #999999;
   justify-content: center;
   text-align: center;
-  cursor: pointer;
+  cursor: url('assets/cursor.svg'), auto;
 }
 
 .impressum {
   color: #999999;
   justify-content: center;
   text-align: center;
-  cursor: pointer;
+  cursor: url('assets/cursor.svg'), auto;
 }
 
 .sterne {
