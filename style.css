@@ -288,6 +288,7 @@ body {
   background-image: url('assets/kleinanzeigen.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: url('assets/cursor.svg'), auto;
 }
 
 .listando {
@@ -296,6 +297,7 @@ body {
   background-image: url('assets/listando.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: url('assets/cursor.svg'), auto;
 }
 
 .copyright {
