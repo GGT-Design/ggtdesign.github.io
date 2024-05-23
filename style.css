@@ -270,6 +270,32 @@ body {
   margin-top: 64px;
 }
 
+.auszeichnungen {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 112px;
+}
+
+.kleinanzeigen {
+  width: 64px;
+  height: 64px;
+  background-image: url('assets/kleinanzeigen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.listando {
+  width: 128px;
+  height: 128px;
+  background-image: url('assets/listando.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .copyright {
   font-family: 'roboto';
   font-size: 14px;
