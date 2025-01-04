@@ -282,15 +282,6 @@ body {
   margin-top: 112px;
 }
 
-.kleinanzeigen {
-  width: 64px;
-  height: 64px;
-  background-image: url('assets/kleinanzeigen.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: url('assets/cursor.svg'), auto;
-}
-
 .listando {
   width: 128px;
   height: 128px;
