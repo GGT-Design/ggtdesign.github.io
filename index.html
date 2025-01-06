@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GGT Design - Freiberuflicher Grafikdesigner</title>
+  </head>
+  <body>
+    <header>
+      <div class="navi">
+        <a href="index.html" class="logo"></a>
+        <ul class="links">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="dienste.html">Dienste</a></li>
+          <li><a href="preise.html">Preise</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="dienste.html">Dienste</a></li>
+        <li><a href="preise.html">Preise</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </div>
+    </header>
+    <main>
+      <section id="start">
+        <div class="titel-startseite">Eindrucksvoll, <div style="font-family: raleway; font-weight: 400; font-size: 36px;">minimalistisch.</div></div>
+        <div class="leiste"></div>
+        <div class="person-container">
+          <div class="name">Gökce Gökay Tutcu</div>
+          <div class="profilbild"></div>
+          <div class="beschreibung">
+            seit über 10 Jahren <a style="color: green; font-family: berkshire swash;">aktiv</a> in der Branche.
+            <br><br>
+            Mit meiner langjährigen Erfahrung und Expertise
+            <br>
+            als Grafikdesigner/ Mediengestalter, möchte ich
+            <br>
+            Kundenwünsche wahr werden lassen.
+            <br><br>
+            Individuell, nach Ihren Vorstellungen.
+            <br><br>
+            Interesse?
+            <br><br>
+            <i class="fa-solid fa-phone"></i> +49 179 4685589<br><i class="fa-solid fa-envelope"></i> ggtdesign@protonmail.com
+            <br><br>
+            Montag bis Samstag
+            <br>
+            12 - 20 Uhr
+          </div>
+        </div>
+        <div class="frames">
+          <div class="frame1"></div>
+          <div class="frame2"></div>
+        </div>
+        <div class="beschreibungen">
+          <div class="beschreibung2">
+            <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Kommunikation</p>
+            Um die Vision Ihres Vorhabens präzise gestalten zu können, ist eine gute Kommunikation notwendig.
+            <br>
+            Wichtig dabei ist, dass Sie Ihr Anliegen genau beschreiben und ggf. Referenzen nennen.
+            <br>
+            Sie können mich gerne anrufen oder anschreiben um mit mir in Verbindung zu treten.
+            <br>
+            Die darauffolgende Kommunikation kann persönlich, telefonisch oder schriftlich erfolgen.
+            <br>
+            Ich freue mich von Ihnen zu hören.
+          </div>
+          <div class="beschreibung3">
+            <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Logo-Design & Corporate Identity</p>
+            Ich kann Ihnen nicht nur ein Logo erstellen, sondern bei Bedarf auch das komplette visuelle Auftreten Ihres Unternehmens neu definieren.
+          </div>
+          <div class="beschreibung4">
+            <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Artworks</p>
+            Sie benötigen ein Artwork für Ihr musikalisches Album oder ein Poster für Ihren nächsten Film?
+            <br>
+            Möglicherweise sind Sie Schriftsteller und benötigen ein Cover für Ihr neues Buch?
+            <br>
+            Ich biete sowohl digitale als auch physische Artworks an.
+          </div>
+          <div class="beschreibung5">
+            <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Verpackungen und Ähnliches</p>
+            Aufkleber, Briefbögen, Beutel, Dosen, Flaschen, Gläser, Tassen, Kartons, Visitenkarten etc.
+          </div>
+          <div class="beschreibung6">
+            <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Tools</p>
+            Adobe Illustrator & Photoshop
+          </div>
+        </div>
+        <div class="auszeichnungen">
+          <a class="listando" href="https://www.listando.de/baden-wuerttemberg/bad-urach/JBqJmtm45W/grafikdesigner/ggt-design/2dB2h0cl1K?listPosition=2&cityId=fospmCxeSv" target="_blank"></a>
+        </div>
+        <div class="copyright">© 2025 GGT Design. Alle Rechte vorbehalten.</div>
+        <div class="rechtliches">
+          <a class="agb" href="agb.html">AGB</a> | 
+          <a class="datenschutz" href="datenschutz.html">Datenschutzerklärung</a> | 
+          <a class="impressum" href="impressum.html">Impressum</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn")
+      const toggleBtnIcon = document.querySelector(".toggle_btn i")
+      const dropDownMenu = document.querySelector(".dropdown_menu")
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GGT Design - Freiberuflicher Grafikdesigner</title>
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open")
+        const isOpen = dropDownMenu.classList.contains("open")
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-
-</head>
-<body>
-
-  <div class="sterne">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-  </div>
-
-  <div class="logo" href="index.html"></div>
-  
-  <div class="menu-leiste">
-    <a class="menu-button" style="color: #c70000">Startseite</a>
-    <a class="menu-button" href="portfolio.html">Portfolio</a>
-    <a class="menu-button" href="dienste.html">Dienste</a>
-    <a class="menu-button" href="preise.html">Preise</a>
-  </div>
-  
-  <div class="titel-startseite">Eindrucksvoll, <a style="font-family: raleway; font-weight: 400;">minimalistisch.</a>
-  </div>
-
-  <div class="leiste"></div>
-
-  <div class="person-container">
-
-    <div class="name">Gökce Gökay Tutcu</div>
-
-    <div class="profilbild"></div>
-  
-    <div class="beschreibung">
-      seit über 10 Jahren <a style="color: green; font-family: berkshire swash;">aktiv</a> in der Branche.
-      <p>Mit meiner langjährigen Erfahrung und Expertise<br>als Grafikdesigner/ Mediengestalter, möchte ich<br>Kundenwünsche wahr werden lassen.
-      <p>Individuell, nach Ihren Vorstellungen.
-      <p>Interesse?
-      <p>+49 179 4685589<br>ggtdesign@protonmail.com<p>Montag bis Samstag
-      <p style="margin-top: -14px;">12 - 20 Uhr
-    </div>
-
-  </div>
-
-  
-  <div class="frames">
-    <div class="frame1"></div>
-    <div class="frame2"></div>
-  </div>
-
-  <div class="beschreibungen">
-
-    <div class="beschreibung2">
-      <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Kommunikation</p>
-      <p>Um die Vision Ihres Vorhabens präzise gestalten zu können, ist eine gute Kommunikation notwendig.<br>
-      Wichtig dabei ist, dass Sie Ihr Anliegen genau beschreiben und ggf. Referenzen nennen.<br>
-      Sie können mich gerne anrufen oder anschreiben um mit mir in Verbindung zu treten.<br>
-      Die darauffolgende Kommunikation kann persönlich, telefonisch oder schriftlich erfolgen.<br>
-      Ich freue mich von Ihnen zu hören.</p>
-    </div>
-    
-    <div class="beschreibung3">
-      <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Logo-Design & Corporate Identity</p>
-      <p>Ich kann Ihnen nicht nur ein Logo erstellen, sondern bei Bedarf auch das komplette visuelle Auftreten Ihres Unternehmens neu definieren.</p>
-    </div>
-    
-    <div class="beschreibung4">
-      <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Artworks</p>
-      <p>Sie benötigen ein Artwork für Ihr musikalisches Album oder ein Poster für Ihren nächsten Film?<br>
-      Möglicherweise sind Sie Schriftsteller und benötigen ein Cover für Ihr neues Buch?<br>
-      Ich biete sowohl digitale als auch physische Artworks an.</p>
-    </div>
-    
-    <div class="beschreibung5">
-      <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Verpackungen und Ähnliches</p>
-      <p>Aufkleber, Briefbögen, Beutel, Dosen, Flaschen, Gläser, Tassen, Kartons, Visitenkarten etc.</p>
-    </div>
-    
-    <div class="beschreibung6">
-      <p style="font-family: raleway; font-size: 28px; font-weight: 700; color: black;">Tools</p>
-      <p>Adobe Illustrator & Photoshop</p>
-    </div>
-
-  </div>
-
-  <div class="auszeichnungen">
-    <a class="listando" href="https://www.listando.de/baden-wuerttemberg/bad-urach/JBqJmtm45W/grafikdesigner/ggt-design/2dB2h0cl1K?listPosition=2&cityId=fospmCxeSv" target="_blank"></a>
-  </div>
-  
-  <div class="copyright">© 2024 GGT Design. Alle Rechte vorbehalten.</div>
-  
-  <div class="rechtliches">
-    <a class="agb" href="agb.html">AGB</a> | 
-    <a class="datenschutz" href="datenschutz.html">Datenschutzerklärung</a> | 
-    <a class="impressum" href="impressum.html">Impressum</a>
-  </div>
-  
-</body>
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      }
+    </script>
+  </body>
 </html>
