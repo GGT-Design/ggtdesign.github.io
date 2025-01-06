@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GGT Design - Kontakt</title>
+  </head>
+  <body>
+    <header>
+      <div class="navi">
+        <a href="index.html" class="logo"></a>
+        <ul class="links">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="dienste.html">Dienste</a></li>
+          <li><a href="preise.html">Preise</a></li>
+          <li><a href="kontakt.html" style="text-decoration: underline;">Kontakt</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="dienste.html">Dienste</a></li>
+        <li><a href="preise.html">Preise</a></li>
+        <li><a href="kontakt.html" style="text-decoration: underline;">Kontakt</a></li>
+      </div>
+    </header>
+    <main>
+      <section id="start">
+        <div class="titel-kontakt">Kontakt</div>
+
+        <div class="beschreibung-kontakt">
+          Falls Sie Interesse oder Fragen haben, zögern Sie nicht, mir per E-Mail zu schreiben oder mich telefonisch zu kontaktieren.
+          <br>
+          Alternativ können Sie mir auch eine SMS senden − wie es Ihnen am bequemsten ist.
+          <br><br>
+          Rufen Sie mich an unter:
+          <br>
+          <i class="fa-solid fa-phone"></i> +49 179 4685589
+          <br><br>
+          Schreiben Sie mir eine E-Mail an:
+          <br>
+          <i class="fa-solid fa-envelope"></i> ggtdesign@protonmail.com
+        </div>
+        
+        <div class="copyright">© 2025 GGT Design. Alle Rechte vorbehalten.</div>
+        
+        <div class="rechtliches">
+          <a class="agb" href="agb.html">AGB</a> | 
+          <a class="datenschutz" href="datenschutz.html">Datenschutzerklärung</a> | 
+          <a class="impressum" href="impressum.html">Impressum</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn")
+      const toggleBtnIcon = document.querySelector(".toggle_btn i")
+      const dropDownMenu = document.querySelector(".dropdown_menu")
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open")
+        const isOpen = dropDownMenu.classList.contains("open")
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      }
+    </script>
+  </body>
+</html>
