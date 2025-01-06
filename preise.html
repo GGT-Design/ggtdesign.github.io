@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GGT Design - Preise</title>
+  </head>
+  <body>
+    <header>
+      <div class="navi">
+        <a href="index.html" class="logo"></a>
+        <ul class="links">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="dienste.html">Dienste</a></li>
+          <li><a href="preise.html" style="text-decoration: underline;">Preise</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="dienste.html">Dienste</a></li>
+        <li><a href="preise.html" style="text-decoration: underline;">Preise</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </div>
+    </header>
+    <main>
+      <section id="start">
+        <div class="titel-preise">Preiskalkulierung</div>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GGT Design - Preise</title>
+        <div class="beschreibung-preise">
+          Die Kosten können je nach Projekt variieren und werden individuell an Ihre Anforderungen angepasst.
+          <br><br>
+          Meine Vergütung liegt unter dem Durchschnitt des Vergütungstarifvertrags, der zwischen der Allianz deutscher Designer e.V. und
+          <br>
+          den Selbständigen Design Studios e.V. ausgehandelt wurde.
+          <br><br>
+          Vor Beginn der Zusammenarbeit erstelle ich eine detaillierte Kalkulation der voraussichtlichen Arbeitszeit und informiere Sie stets
+          <br>
+          über entstehende Kosten. Nachbesserung oder Individualisierungen ist selbstverständlich kostenlos.
+          <br><br>
+          Mein Stundensatz beträgt in der Regel 50 EUR, kann jedoch abhängig von den spezifischen Projektanforderungen angepasst werden.
+          <br><br>
+          Für weitere Fragen stehe ich Ihnen jederzeit gerne zur Verfügung.
+          <br><br>
+          Rufen Sie mich an unter:
+          <br>
+          <i class="fa-solid fa-phone"></i> +49 179 4685589
+          <br><br>
+          Schreiben Sie mir eine E-Mail an:
+          <br>
+          <i class="fa-solid fa-envelope"></i> ggtdesign@protonmail.com
+        </div>
+        
+        <div class="copyright">© 2025 GGT Design. Alle Rechte vorbehalten.</div>
+        
+        <div class="rechtliches">
+          <a class="agb" href="agb.html">AGB</a> | 
+          <a class="datenschutz" href="datenschutz.html">Datenschutzerklärung</a> | 
+          <a class="impressum" href="impressum.html">Impressum</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn")
+      const toggleBtnIcon = document.querySelector(".toggle_btn i")
+      const dropDownMenu = document.querySelector(".dropdown_menu")
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open")
+        const isOpen = dropDownMenu.classList.contains("open")
 
-</head>
-<body>
-
-  <div class="sterne">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-  </div>
-
-  <div class="logo" href="index.html"></div>
-
-  <div class="menu-leiste">
-    <a class="menu-button" href="index.html">Startseite</a>
-    <a class="menu-button" href="portfolio.html">Portfolio</a>
-    <a class="menu-button" href="dienste.html">Dienste</a>
-    <a class="menu-button" style="color: #c70000">Preise</a>
-  </div>
-
-  <div class="titel-preise">Meine Preise</div>
-
-  <div class="beschreibung-preise">
-    Die Kosten können von Projekt zu Projekt unterschiedlich ausfallen.
-    <p>
-    Meine Vergütung liegt unter dem Durchschnitt des Vergütungstarifvertrags, der zwischen der Allianz deutscher Designer e.V. und
-    <br>
-    den Selbständigen Design Studios e.V. ausgehandelt wurde.
-    <p>
-    Bevor ich mit der Arbeit beginne, werde ich Ihnen die voraussichtliche Arbeitszeit kalkulieren und Ihnen die Kosten vorab nennen.
-    <br>
-    Mein Stundensatz beträgt grundsätzlich 50 EUR.
-    <p>
-    Bei weiteren Fragen, stehe ich Ihnen selbstverständlich gerne zur Verfügung.
-  </div>
-  
-  <div class="copyright">© 2024 GGT Design. Alle Rechte vorbehalten.</div>
-  
-  <div class="rechtliches">
-    <a class="agb" href="agb.html">AGB</a> | 
-    <a class="datenschutz" href="datenschutz.html">Datenschutzerklärung</a> | 
-    <a class="impressum" href="impressum.html">Impressum</a>
-  </div>
-  
-</body>
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      }
+    </script>
+  </body>
 </html>
