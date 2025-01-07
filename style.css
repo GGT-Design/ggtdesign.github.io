@@ -178,6 +178,7 @@ section#start {
 .titel-agb,
 .titel-datenschutz,
 .titel-impressum {
+  max-width: 100%;
   font-family: 'raleway';
   font-size: 38px;
   font-weight: 500;
