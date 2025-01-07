@@ -264,7 +264,7 @@ section#start {
 }
 
 .port1 {
-  max-width: 100%;
+  max-width: 90%;
   width: 904px;
   height: 197px;
   background-image: url('assets/port1.png');
@@ -276,7 +276,7 @@ section#start {
 }
 
 .port2 {
-  max-width: 100%;
+  max-width: 90%;
   width: 904px;
   height: 274px;
   background-image: url('assets/port2.png');
@@ -288,7 +288,7 @@ section#start {
 }
 
 .port3 {
-  max-width: 100%;
+  max-width: 90%;
   width: 360px;
   height: 454px;
   background-image: url('assets/port3.png');
@@ -300,7 +300,7 @@ section#start {
 }
 
 .port4 {
-  max-width: 100%;
+  max-width: 90%;
   width: 662px;
   height: 454px;
   background-image: url('assets/port4.png');
@@ -312,7 +312,7 @@ section#start {
 }
 
 .port5 {
-  max-width: 100%;
+  max-width: 90%;
   width: 424px;
   height: 602px;
   background-image: url('assets/port5.png');
@@ -324,7 +324,7 @@ section#start {
 }
 
 .port6 {
-  max-width: 100%;
+  max-width: 90%;
   width: 510px;
   height: 403px;
   background-image: url('assets/port6.png');
