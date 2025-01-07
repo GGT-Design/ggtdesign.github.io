@@ -73,7 +73,7 @@ a:hover {
 header {
   position: relative;
   padding: 0 2rem;
-  background-color: rgba(28, 28, 28, 0.1);
+  background-color: #dedede;
 }
 
 .navi {
@@ -113,8 +113,8 @@ header {
   right: -100%;
   width: 256px;
   height: 100vh;
-  background: rgba(28, 28, 28, 1);
-  color: white;
+  background: #dedede;
+  color: #282828;
   z-index: 1;
   transition: right 0.3s ease-in-out;
   display: flex;
@@ -143,7 +143,7 @@ header {
 }
 
 .offcanvas_menu ul li a {
-  color: white;
+  color: #282828;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -228,7 +228,7 @@ section#start {
 }
 
 .beschreibung {
-  max-width: 90%;
+  max-width: 100%;
   font-family: 'roboto';
   font-size: 16px;
   font-weight: 400;
