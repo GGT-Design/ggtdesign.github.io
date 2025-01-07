@@ -29,13 +29,18 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
-      <div class="dropdown_menu">
+    </header>
+    <div class="offcanvas_menu" id="offcanvasMenu">
+      <div class="close_btn" onclick="toggleOffCanvas()">
+        <i class="fa-solid fa-times"></i>
+      </div>
+      <ul>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="dienste.html">Dienste</a></li>
         <li><a href="preise.html">Preise</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </div>
-    </header>
+        <li><a href="kontakt.html" style="text-decoration: underline;">Kontakt</a></li>
+      </ul>
+    </div>
     <main>
       <section id="start">
         <div class="titel-agb">Impressum</div>
@@ -93,5 +98,23 @@
         </div>
       </section>
     </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn")
+      const toggleBtnIcon = document.querySelector(".toggle_btn i")
+      const offCanvasMenu = document.getElementById("offcanvasMenu");
+
+      function toggleOffCanvas() {
+        // Öffnen/Schließen der Off-Canvas-Navigation
+        offCanvasMenu.classList.toggle('open');
+
+        // Ändern des Icons je nach Status
+        const isOpen = offCanvasMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+      }
+      // Event Listener für den Toggle-Button
+      toggleBtn.addEventListener("click", toggleOffCanvas);
+    </script>
   </body>
 </html>
