@@ -60,7 +60,6 @@ li {
 }
 
 a {
-  font-family: 'roboto';
   text-decoration: none;
   color: #282828;
   font-size: 1rem;
@@ -109,6 +108,7 @@ header {
 }
 
 .offcanvas_menu {
+  font-family: 'roboto';
   position: fixed;
   top: 0;
   right: -100%;
@@ -144,7 +144,6 @@ header {
 }
 
 .offcanvas_menu ul li a {
-  font-family: 'roboto';
   color: #282828;
   text-decoration: none;
   font-size: 1.2rem;
