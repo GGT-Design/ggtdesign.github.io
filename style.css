@@ -268,6 +268,7 @@ section#start {
   background-image: url('assets/port1.png');
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
   margin-top: 128px;
 }
 
@@ -278,6 +279,7 @@ section#start {
   background-image: url('assets/port2.png');
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
   margin-top: 192px;
 }
 
@@ -288,6 +290,7 @@ section#start {
   background-image: url('assets/port3.png');
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
   margin-top: 192px;
 }
 
@@ -298,6 +301,7 @@ section#start {
   background-image: url('assets/port4.png');
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
   margin-top: 192px;
 }
 
@@ -308,6 +312,7 @@ section#start {
   background-image: url('assets/port5.png');
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
   margin-top: 192px;
 }
 
@@ -318,6 +323,7 @@ section#start {
   background-image: url('assets/port6.png');
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
   margin-top: 192px;
 }
 
