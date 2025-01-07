@@ -323,6 +323,18 @@ section#start {
   margin-right: auto;
 }
 
+.port6 {
+  max-width: 100%;
+  width: 510px;
+  height: 403px;
+  background-image: url('assets/port6.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 192px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .beschreibung-dienste,
 .beschreibung-preise,
 .beschreibung-kontakt {
