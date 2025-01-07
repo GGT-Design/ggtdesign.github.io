@@ -107,36 +107,45 @@ header {
   scale: 0.95;
 }
 
-.dropdown_menu {
-  display: none;
-  position: absolute;
-  right: 2rem;
-  top: 64px;;
+.offcanvas_menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
   width: 256px;
-  background: rgba(28, 28, 28, 0.1);
-  backdrop-filter: blur(16px);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu.open {
-  display: block;
-}
-
-.dropdown_menu li {
-  padding: 0.7rem;
+  height: 100vh;
+  background: rgba(28, 28, 28, 1);
+  color: white;
+  z-index: 1;
+  transition: right 0.3s ease-in-out;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.offcanvas_menu.open {
+  right: 0;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.offcanvas_menu .close_btn {
+  margin-left: auto;
   cursor: url('assets/cursor.svg'), auto;
-  transition: 0.2 ease-in-out;
 }
 
-.dropdown_menu .action_btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.offcanvas_menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.offcanvas_menu ul li {
+  margin-bottom: 1rem;
+}
+
+.offcanvas_menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 section#start {
@@ -149,6 +158,7 @@ section#start {
 }
 
 .titel-startseite {
+  max-width: 100%;
   font-family: berkshire swash;
   font-size: 38px;
   font-weight: 500;
@@ -185,16 +195,6 @@ section#start {
   justify-content: center;
   text-align: center;
   margin-top: 80px;
-}
-
-.titel-portfolio:hover,
-.titel-dienste:hover,
-.titel-preise:hover,
-.titel-kontakt:hover,
-.titel-agb:hover,
-.titel-datenschutz:hover,
-.titel-impressum:hover {
-  color: #c70000;
 }
 
 .person-container {
