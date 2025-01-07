@@ -60,6 +60,7 @@ li {
 }
 
 a {
+  font-family: 'roboto';
   text-decoration: none;
   color: #282828;
   font-size: 1rem;
