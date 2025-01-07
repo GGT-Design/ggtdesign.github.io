@@ -155,7 +155,6 @@ section#start {
   justify-content: center;
   text-align: center;
   margin-top: 32px;
-  display: inline-flex;
 }
 
 .leiste {
@@ -312,7 +311,7 @@ section#start {
 .beschreibung-dienste,
 .beschreibung-preise,
 .beschreibung-kontakt {
-  max-width: 50%;
+  max-width: 80%;
   font-family: 'roboto';
   font-size: 16px;
   font-weight: 400;
