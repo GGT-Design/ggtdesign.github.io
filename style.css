@@ -296,17 +296,6 @@ section#start {
 
 .port4 {
   max-width: 90%;
-  width: 662px;
-  height: 454px;
-  background-image: url('assets/port4.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
-  margin-top: 192px;
-}
-
-.port5 {
-  max-width: 90%;
   width: 424px;
   height: 602px;
   background-image: url('assets/port5.png');
@@ -316,7 +305,7 @@ section#start {
   margin-top: 192px;
 }
 
-.port6 {
+.port5 {
   max-width: 90%;
   width: 510px;
   height: 403px;
