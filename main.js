@@ -6,14 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const minute = document.querySelector('.minutenzeiger');
   const stunde = document.querySelector('.stundenzeiger');
-  const stoppuhr = document.querySelector('.stoppuhrzeiger');
   const totalisatorLinks = document.querySelector('.totalisator-links');
-  const totalisatorRechts = document.querySelector('.totalisator-rechts');
-  const totalisatorUnten = document.querySelector('.totalisator-unten');
+  const messschieber = document.querySelector('.messschieber');
 
   let sekundenVerlauf = 0;
   let minutenVerlauf = 0;
   let stundenVerlauf = 0;
+
+  let isDragging = false;
+  let currentAngle = 0;
 
   function toggleOffCanvas() {
     offCanvasMenu.classList.toggle('open');
@@ -52,4 +53,47 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(updateClock);
   }
   updateClock();
+
+  messschieber.addEventListener('mousedown', (e) => {
+    if (isDragging) return;
+    isDragging = true;
+    messschieber.style.transition = 'none';
+  
+    const rect = messschieber.getBoundingClientRect();
+  
+    const center = {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2
+    };
+  
+    const transform = window.getComputedStyle(messschieber).transform;
+  
+    let matrix = transform.match(/matrix\(([^)]+)\)/);
+  
+    if (matrix) {
+      let values = matrix[1].split(', ');
+      let a = parseFloat(values[0]);
+      let b = parseFloat(values[1]);
+      currentAngle = Math.atan2(b, a);
+    }
+  
+    const startAngle = Math.atan2(e.clientY - center.y, e.clientX - center.x) - currentAngle;
+  
+    function onMouseMove(e) {
+      if (!isDragging) return;
+      let newAngle = Math.atan2(e.clientY - center.y, e.clientX - center.x) - startAngle;
+      messschieber.style.transform = `rotate(${newAngle}rad)`;
+    }
+  
+    function onMouseUp() {
+      isDragging = false;
+      currentAngle = parseFloat(messschieber.style.transform.match(/rotate\(([^)]+)rad\)/)[1]);
+      messschieber.style.transition = 'transform 0.5s ease';
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseup', onMouseUp);
+    }
+  
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+  });
 });
