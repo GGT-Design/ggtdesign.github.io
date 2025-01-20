@@ -45,9 +45,19 @@
       <section id="start">
         <div class="titel-startseite">Eindrucksvoll, <div style="font-family: raleway; font-weight: 400; font-size: 36px; display: inline-flex;">minimalistisch.</div></div>
         <div class="leiste"></div>
+        <a class="uhr" href="https://apps.apple.com/de/app/chronograph/id6478055422" target="_blank" rel="noopener noreferrer">
+          <div class="ziffernblatt">
+            <div class="messschieber"></div>
+            <div class="totalisator-links"></div>
+            <div class="totalisator-rechts"></div>
+            <div class="totalisator-unten"></div>
+            <div class="stundenzeiger"></div>
+            <div class="minutenzeiger"></div>
+            <div class="stoppuhrzeiger"></div>
+          </div>
+        </a>
         <div class="person-container">
           <div class="name">Gökce Gökay Tutcu</div>
-          <div class="profilbild"></div>
           <div class="beschreibung">
             seit über 10 Jahren <a style="color: green; font-family: berkshire swash;">aktiv</a> in der Branche.
             <br><br>
@@ -121,23 +131,6 @@
         </div>
       </section>
     </main>
-    <script>
-      const toggleBtn = document.querySelector(".toggle_btn")
-      const toggleBtnIcon = document.querySelector(".toggle_btn i")
-      const offCanvasMenu = document.getElementById("offcanvasMenu");
-
-      function toggleOffCanvas() {
-        // Öffnen/Schließen der Off-Canvas-Navigation
-        offCanvasMenu.classList.toggle('open');
-
-        // Ändern des Icons je nach Status
-        const isOpen = offCanvasMenu.classList.contains("open");
-        toggleBtnIcon.classList = isOpen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars";
-      }
-      // Event Listener für den Toggle-Button
-      toggleBtn.addEventListener("click", toggleOffCanvas);
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
