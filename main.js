@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
   messschieber.addEventListener('touchstart', startDrag);
 
   function startDrag(e) {
+    e.preventDefault();
+    
     if (isDragging) return;
     isDragging = true;
     messschieber.style.transition = 'none';
