@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.querySelector(".toggle_btn")
-  const toggleBtnIcon = document.querySelector(".toggle_btn i")
+  const toggleBtn = document.querySelector(".toggle_btn");
+  const toggleBtnIcon = document.querySelector(".toggle_btn i");
   const offCanvasMenu = document.getElementById("offcanvasMenu");
   const closeBtn = document.querySelector(".close_btn i");
 
@@ -54,46 +54,55 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   updateClock();
 
-  messschieber.addEventListener('mousedown', (e) => {
+  messschieber.addEventListener('mousedown', startDrag);
+  messschieber.addEventListener('touchstart', startDrag);
+
+  function startDrag(e) {
     if (isDragging) return;
     isDragging = true;
     messschieber.style.transition = 'none';
-  
+
+    const event = e.touches ? e.touches[0] : e;
+
     const rect = messschieber.getBoundingClientRect();
-  
     const center = {
       x: rect.left + rect.width / 2,
       y: rect.top + rect.height / 2
     };
-  
+
     const transform = window.getComputedStyle(messschieber).transform;
-  
-    let matrix = transform.match(/matrix\(([^)]+)\)/);
-  
+    let matrix = transform.match(/matrix\(([^]+)\)/);
+
     if (matrix) {
       let values = matrix[1].split(', ');
       let a = parseFloat(values[0]);
       let b = parseFloat(values[1]);
       currentAngle = Math.atan2(b, a);
+    } else {
+      currentAngle = 0;
     }
-  
-    const startAngle = Math.atan2(e.clientY - center.y, e.clientX - center.x) - currentAngle;
-  
-    function onMouseMove(e) {
+
+    const startAngle = Math.atan2(event.clientY - center.y, event.clientX - center.x) - currentAngle;
+
+    function onMove(e) {
       if (!isDragging) return;
-      let newAngle = Math.atan2(e.clientY - center.y, e.clientX - center.x) - startAngle;
+      const moveEvent = e.touches ? e.touches[0] : e;
+      let newAngle = Math.atan2(moveEvent.clientY - center.y, moveEvent.clientX - center.x) - startAngle;
       messschieber.style.transform = `rotate(${newAngle}rad)`;
     }
-  
-    function onMouseUp() {
+
+    function onEnd() {
       isDragging = false;
       currentAngle = parseFloat(messschieber.style.transform.match(/rotate\(([^)]+)rad\)/)[1]);
       messschieber.style.transition = 'transform 0.5s ease';
-      document.removeEventListener('mousemove', onMouseMove);
-      document.removeEventListener('mouseup', onMouseUp);
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onMove);
+      document.removeEventListener('touchmove', onMove);
+      document.removeEventListener('touchend', onEnd);
     }
-  
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
-  });
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onEnd);
+    document.addEventListener('touchmove', onMove);
+    document.addEventListener('touchend', onEnd);
+  }
 });
