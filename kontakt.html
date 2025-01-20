@@ -44,7 +44,7 @@
     <main>
       <section id="start">
         <div class="titel-kontakt">Kontakt</div>
-
+        <div class="profilbild"></div>
         <div class="beschreibung-kontakt">
           Falls Sie Interesse oder Fragen haben, zögern Sie nicht, mir per E-Mail zu schreiben oder mich telefonisch zu kontaktieren.
           <br>
@@ -57,6 +57,8 @@
           Schreiben Sie mir eine E-Mail an:
           <br>
           <i class="fa-solid fa-envelope"></i> ggtdesign@protonmail.com
+          <br><br>
+          Ich freue mich darauf, Ihnen dabei zu helfen, Ihre Visionen zu verwirklichen.
         </div>
         
         <div class="copyright">© 2025 GGT Design. Alle Rechte vorbehalten.</div>
@@ -68,23 +70,6 @@
         </div>
       </section>
     </main>
-    <script>
-      const toggleBtn = document.querySelector(".toggle_btn")
-      const toggleBtnIcon = document.querySelector(".toggle_btn i")
-      const offCanvasMenu = document.getElementById("offcanvasMenu");
-
-      function toggleOffCanvas() {
-        // Öffnen/Schließen der Off-Canvas-Navigation
-        offCanvasMenu.classList.toggle('open');
-
-        // Ändern des Icons je nach Status
-        const isOpen = offCanvasMenu.classList.contains("open");
-        toggleBtnIcon.classList = isOpen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars";
-      }
-      // Event Listener für den Toggle-Button
-      toggleBtn.addEventListener("click", toggleOffCanvas);
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
