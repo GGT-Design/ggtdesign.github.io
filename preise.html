@@ -78,23 +78,6 @@
         </div>
       </section>
     </main>
-    <script>
-      const toggleBtn = document.querySelector(".toggle_btn")
-      const toggleBtnIcon = document.querySelector(".toggle_btn i")
-      const offCanvasMenu = document.getElementById("offcanvasMenu");
-
-      function toggleOffCanvas() {
-        // Öffnen/Schließen der Off-Canvas-Navigation
-        offCanvasMenu.classList.toggle('open');
-
-        // Ändern des Icons je nach Status
-        const isOpen = offCanvasMenu.classList.contains("open");
-        toggleBtnIcon.classList = isOpen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars";
-      }
-      // Event Listener für den Toggle-Button
-      toggleBtn.addEventListener("click", toggleOffCanvas);
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
