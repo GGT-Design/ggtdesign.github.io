@@ -110,9 +110,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Verhindert das Standard-Absenden des Formulars
   let valid = true;
   let requiredFields = ["title", "name", "email", "message", "dpa-consent"];
+  let form = this; // Speichert das Formular für späteres Zurücksetzen
 
   requiredFields.forEach(function(id) {
     let field = document.getElementById(id);
@@ -137,10 +137,12 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }).then(response => {
       if (response.ok) {
         alert("Danke! Ihre Nachricht wurde erfolgreich gesendet.");
-        window.location.reload(); // 🔄 Seite neu laden nach erfolgreicher Einsendung
+        form.reset(); // 🔄 Formular zurücksetzen
       } else {
         alert("Es gab ein Problem. Bitte versuchen Sie es erneut.");
       }
     }).catch(() => alert("Es gab ein Problem. Bitte versuchen Sie es erneut."));
   }
+
+  event.preventDefault(); // Verhindert das Standardverhalten des Browsers
 });
