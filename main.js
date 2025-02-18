@@ -112,7 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   let valid = true;
   let requiredFields = ["title", "name", "email", "message", "dpa-consent"];
-  let form = this; // Speichert das Formular für späteres Zurücksetzen
 
   requiredFields.forEach(function(id) {
     let field = document.getElementById(id);
