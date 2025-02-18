@@ -108,3 +108,25 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener('touchend', onEnd);
   }
 });
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  let valid = true;
+  let requiredFields = ["title", "name", "email", "message", "dpa-consent"];
+
+  requiredFields.forEach(function(id) {
+    let field = document.getElementById(id);
+    let errorMessage = field.nextElementSibling;
+    if ((field.type === "checkbox" && !field.checked) || (field.value.trim() === "")) {
+      errorMessage.textContent = "Dieses Feld ist erforderlich";
+      field.classList.add("error-border");
+      valid = false;
+    } else {
+      errorMessage.textContent = "";
+      field.classList.remove("error-border");
+    }
+  });
+
+  if (!valid) {
+    event.preventDefault(); // Stoppt das Absenden des Formulars
+  }
+});
