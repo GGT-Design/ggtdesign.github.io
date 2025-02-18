@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Verhindert das Standard-Absenden des Formulars
   let valid = true;
   let requiredFields = ["title", "name", "email", "message", "dpa-consent"];
 
@@ -126,7 +127,20 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }
   });
 
-  if (!valid) {
-    event.preventDefault(); // Stoppt das Absenden des Formulars
+  if (valid) {
+    // Daten an Formspree senden
+    let formData = new FormData(this);
+    fetch(this.action, {
+      method: "POST",
+      body: formData,
+      headers: { "Accept": "application/json" }
+    }).then(response => {
+      if (response.ok) {
+        alert("Danke! Ihre Nachricht wurde erfolgreich gesendet.");
+        window.location.reload(); // 🔄 Seite neu laden nach erfolgreicher Einsendung
+      } else {
+        alert("Es gab ein Problem. Bitte versuchen Sie es erneut.");
+      }
+    }).catch(() => alert("Es gab ein Problem. Bitte versuchen Sie es erneut."));
   }
 });
