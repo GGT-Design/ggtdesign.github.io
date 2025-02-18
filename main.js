@@ -144,5 +144,5 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }).catch(() => alert("Es gab ein Problem. Bitte versuchen Sie es erneut."));
   }
 
-  event.preventDefault(); // Verhindert das Standardverhalten des Browsers
+  event.preventDefault();
 });
