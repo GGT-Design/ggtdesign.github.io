@@ -50,7 +50,7 @@
         <h4 class="beschreibung-kontakt">
           Falls Sie Interesse oder Fragen haben, zögern Sie nicht, mir per E-Mail zu schreiben oder mich telefonisch zu kontaktieren.
           <br>
-          Alternativ können Sie mir auch eine SMS senden − wie es Ihnen am bequemsten ist.
+          Alternativ können Sie auch das Kontaktformular nutzen − wie es Ihnen am bequemsten ist.
           <br><br>
           Rufen Sie mich an unter:
           <br>
@@ -62,6 +62,60 @@
           <br><br>
           Ich freue mich auf Sie.
         </h4>
+
+        <form action="https://formspree.io/f/xnnjlade" method="POST" class="contact-form">
+          <fieldset>
+            <legend>Kontaktformular</legend>
+        
+            <div class="form-group">
+              <label for="title">Anrede*</label>
+              <select id="title" name="title" required>
+                <option value="title-1">-</option>
+                <option value="title-2">Frau</option>
+                <option value="title-3">Herr</option>
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <label for="name">Vor- & Nachname*</label>
+              <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+            </div>
+        
+            <div class="form-group">
+              <label for="email">E-Mail*</label>
+              <input type="email" id="email" name="email" required placeholder="max@mustermann.de">
+            </div>
+
+            <div class="form-group">
+              <label for="phone-number">Handynummer</label>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="+49 123 456789">
+            </div>
+        
+            <div class="form-group">
+              <label for="company">Unternehmen</label>
+              <input type="text" id="company" name="company" placeholder="Musterfirma GmbH">
+            </div>
+        
+            <div class="form-group">
+              <label for="country">Land</label>
+              <input type="text" id="country" name="country" placeholder="Musterland">
+            </div>
+        
+            <div class="form-group">
+              <label for="message">Ihre Nachricht*</label>
+              <textarea id="message" name="message" required placeholder="Was möchten Sie denn gerne wissen?"></textarea>
+            </div>
+        
+            <div class="form-checkbox">
+              <input type="checkbox" id="dpa-consent" name="dpa-consent" required>
+              <label for="dpa-consent">
+                Ich stimme der Datenverarbeitung gemäß der Datenschutzbestimmungen zu.
+              </label>
+            </div>
+        
+            <button type="submit" class="submit-button">Absenden</button>
+          </fieldset>
+        </form>
         
         <h4 class="copyright">© 2025 GGT Design. Alle Rechte vorbehalten.</h4>
         
