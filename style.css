@@ -311,7 +311,6 @@ section#start {
   font-size: 26px;
   font-weight: 500;
   color: #484848;
-  margin-top: 32px;
 }
 
 .profilbild {
@@ -327,13 +326,14 @@ section#start {
 }
 
 .carousel {
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
-  margin: 32px 0;
+  margin: 64px 0;
 }
 
 .carousel-images {
   display: flex;
+  width: fit-content;
   animation: slide 600s linear infinite;
 }
 
@@ -541,7 +541,15 @@ section#start {
   margin-top: 64px;
 }
 
-.beschreibung1,
+.beschreibung1 {
+  max-width: 80%;
+  font-family: 'roboto';
+  font-size: 16px;
+  font-weight: 400;
+  color: #484848;
+  margin: 64px 0;
+}
+
 .beschreibung2,
 .beschreibung3,
 .beschreibung4,
