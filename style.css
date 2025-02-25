@@ -371,6 +371,16 @@ section#start {
   margin-top: 128px;
 }
 
+.port1-1 {
+  max-width: 80%;
+  width: 904px;
+  height: 904px;
+  background-image: url('assets/port1-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
 .port2 {
   max-width: 80%;
   width: 904px;
@@ -382,11 +392,32 @@ section#start {
   margin-top: 192px;
 }
 
+.port2-1 {
+  max-width: 80%;
+  width: 904px;
+  height: 904px;
+  background-image: url('assets/port2-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
 .port3 {
   max-width: 80%;
   width: 360px;
   height: 454px;
   background-image: url('assets/port3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin-top: 192px;
+}
+
+.port3-1 {
+  max-width: 80%;
+  width: 454px;
+  height: 454px;
+  background-image: url('assets/port3-1.png');
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
@@ -401,6 +432,17 @@ section#start {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
+  margin-top: 312px;
+}
+
+.port4-1 {
+  max-width: 80%;
+  width: 602px;
+  height: 602px;
+  background-image: url('assets/port4-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
   margin-top: 192px;
 }
 
@@ -409,6 +451,17 @@ section#start {
   width: 510px;
   height: 403px;
   background-image: url('assets/port5.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin-top: 256px;
+}
+
+.port5-1 {
+  max-width: 80%;
+  width: 510px;
+  height: 510px;
+  background-image: url('assets/port5-1.png');
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
