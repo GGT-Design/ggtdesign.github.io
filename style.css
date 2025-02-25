@@ -311,6 +311,7 @@ section#start {
   font-size: 26px;
   font-weight: 500;
   color: #484848;
+  margin-top: 32px;
 }
 
 .profilbild {
@@ -325,20 +326,36 @@ section#start {
   margin-top: 64px;
 }
 
-.beschreibung {
-  max-width: 100%;
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 400;
-  color: #484848;
-  margin-top: 38px;
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  margin: 32px 0;
+}
+
+.carousel-images {
+  display: flex;
+  animation: slide 600s linear infinite;
+}
+
+.carousel-images img {
+  width: 750px;
+  height: 500px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .frames {
   max-width: 80%;
   display: flex;
   justify-content: center;
-  margin-top: 96px;
+  margin-top: 32px;
 }
 
 .frame1 {
@@ -519,11 +536,12 @@ section#start {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
   margin-top: 64px;
 }
 
+.beschreibung1,
 .beschreibung2,
 .beschreibung3,
 .beschreibung4,
@@ -535,17 +553,16 @@ section#start {
   font-weight: 400;
   color: #484848;
   margin-top: 64px;
+  margin-bottom: 32px;
 }
 
 .auszeichnungen {
-  max-width: 90%;
+  max-width: 80%;
   display: flex;
-  flex-direction: column;
-  gap: 4px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 112px;
+  margin-top: 128px;
 }
 
 .listando {
