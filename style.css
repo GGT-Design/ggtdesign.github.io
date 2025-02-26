@@ -333,7 +333,7 @@ section#start {
 .carousel-images {
   display: flex;
   width: fit-content;
-  animation: slide 600s linear infinite;
+  animation: slide 1800s linear infinite;
 }
 
 .carousel-images img {
