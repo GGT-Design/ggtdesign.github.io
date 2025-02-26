@@ -484,6 +484,28 @@ section#start {
   margin-top: 192px;
 }
 
+.port6 {
+  max-width: 80%;
+  width: 1515px;
+  height: 281px;
+  background-image: url('assets/port6.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin-top: 256px;
+}
+
+.port6-1 {
+  max-width: 80%;
+  width: 1515px;
+  height: 1515px;
+  background-image: url('assets/port6-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin-top: 128px;
+}
+
 .beschreibung-dienste,
 .beschreibung-preise {
   max-width: 80%;
