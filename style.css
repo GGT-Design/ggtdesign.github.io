@@ -150,7 +150,13 @@ header {
   font-size: 1.2rem;
 }
 
-.uhr {
+.uhren {
+  display: flex;
+  align-decoration: none;
+  justify-content: center;
+}
+
+.uhr1 {
   width: 256px;
   height: 256px;
   position: relative;
@@ -161,8 +167,8 @@ header {
   transform: scale(0.3);
 }
 
-.messschieber {
-  background-image: url('assets/Messschieber-01.png');
+.ziffernblatt1 {
+  background-image: url('assets/f_ziffernblatt_01.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -171,8 +177,8 @@ header {
   position: relative;
 }
 
-.ziffernblatt {
-  background-image: url('assets/Uhr-Vorlage2-02.png');
+.messschieber1 {
+  background-image: url('assets/f_messschieber_01.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -181,8 +187,8 @@ header {
   position: relative;
 }
 
-.stundenzeiger {
-  background-image: url('assets/Stundenzeiger.png');
+.stundenzeiger1 {
+  background-image: url('assets/f_stundenzeiger.png');
   width: 63px;
   height: 236px;
   position: absolute;
@@ -192,8 +198,8 @@ header {
   transform-origin: center calc(100% - 31px);
 }
 
-.minutenzeiger {
-  background-image: url('assets/Minutenzeiger.png');
+.minutenzeiger1 {
+  background-image: url('assets/f_minutenzeiger.png');
   width: 49px;
   height: 320px;
   position: absolute;
@@ -204,7 +210,7 @@ header {
 }
 
 .stoppuhrzeiger {
-  background-image: url('assets/Stoppuhrzeiger.png');
+  background-image: url('assets/f_stoppuhrzeiger.png');
   width: 38px;
   height: 404px;
   position: absolute;
@@ -215,7 +221,7 @@ header {
 }
 
 .totalisator-links {
-  background-image: url('assets/Kleiner-Zeiger.png');
+  background-image: url('assets/f_kleiner_zeiger_w.png');
   width: 29px;
   height: 108px;
   position: absolute;
@@ -226,7 +232,7 @@ header {
 }
 
 .totalisator-rechts {
-  background-image: url('assets/Kleiner-Zeiger.png');
+  background-image: url('assets/f_kleiner_zeiger_w.png');
   width: 29px;
   height: 108px;
   position: absolute;
@@ -237,7 +243,7 @@ header {
 }
 
 .totalisator-unten {
-  background-image: url('assets/Kleiner-Zeiger.png');
+  background-image: url('assets/f_kleiner_zeiger_w.png');
   width: 29px;
   height: 108px;
   position: absolute;
@@ -245,6 +251,71 @@ header {
   bottom: 283.4px;
   transform: translateX(-14.5px), translateY(-15px);
   transform-origin: center calc(100% - 15px);
+}
+
+.uhr2 {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+  margin-left: 32px;
+  transform: scale(0.3);
+}
+
+.ziffernblatt2 {
+  background-image: url('assets/t_ziffernblatt_01.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 942px;
+  height: 942px;
+  position: relative;
+}
+
+.messschieber2 {
+  background-image: url('assets/t_messschieber_01.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 942px;
+  height: 942px;
+  position: relative;
+}
+
+.stundenzeiger2 {
+  background-image: url('assets/t_stundenzeiger_01.png');
+  width: 73px;
+  height: 216px;
+  position: absolute;
+  left: 434.5px;
+  bottom: 443px;
+  transform: translateX(-36.5px), translateY(-28px);
+  transform-origin: center calc(100% - 28px);
+}
+
+.minutenzeiger2 {
+  background-image: url('assets/t_minutenzeiger_01.png');
+  width: 39px;
+  height: 308px;
+  position: absolute;
+  left: 451.5px;
+  bottom: 452px;
+  transform: translateX(19.5px), translateY(-19px);
+  transform-origin: center calc(100% - 19px);
+}
+
+.sekundenzeiger {
+  background-image: url('assets/t_sekundenzeiger_01.png');
+  width: 36px;
+  height: 314px;
+  position: absolute;
+  left: 452.5px;
+  bottom: 455.5px;
+  transform: translateX(-18.5px), translateY(-15.5px);
+  transform-origin: center calc(100% - 15.5px);
 }
 
 section#start {
