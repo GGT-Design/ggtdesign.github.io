@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const offCanvasMenu = document.getElementById("offcanvasMenu");
   const closeBtn = document.querySelector(".close_btn i");
 
-  const minute = document.querySelector('.minutenzeiger');
-  const stunde = document.querySelector('.stundenzeiger');
-  const totalisatorLinks = document.querySelector('.totalisator-links');
-  const messschieber = document.querySelector('.messschieber');
+  const minute = document.querySelectorAll('.minutenzeiger1, .minutenzeiger2');
+  const stunde = document.querySelectorAll('.stundenzeiger1, .stundenzeiger2');
+  const totalisatorLinks = document.querySelectorAll('.totalisator-links, .sekundenzeiger');
+  const messschieber = document.querySelectorAll('.messschieber1, .messschieber2');
 
   let sekundenVerlauf = 0;
   let minutenVerlauf = 0;
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", closeOffCanvas);
 
   function updateClock() {
-    const now = Date.now();
     const date = new Date;
     const millisekunden = date.getMilliseconds();
     const sekunden = date.getSeconds();
@@ -43,9 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
     minutenVerlauf = (minuten * 6) + (sekunden / 10);
     stundenVerlauf = (stunden * 30) + (minuten / 2);
 
-    minute.style.transform = `rotate(${minutenVerlauf}deg)`;
-    stunde.style.transform = `rotate(${stundenVerlauf}deg)`;
-    totalisatorLinks.style.transform = `rotate(${sekundenVerlauf}deg)`;
+    minute.forEach(el => {
+      el.style.transform = `rotate(${minutenVerlauf}deg)`;
+    });
+    stunde.forEach(el => {
+      el.style.transform = `rotate(${stundenVerlauf}deg)`;
+    });
+    totalisatorLinks.forEach(el => {
+      el.style.transform = `rotate(${sekundenVerlauf}deg)`;
+    });  
 
     if (typeof isRunning !== "undefined" && isRunning) {
       updateStoppuhr();
