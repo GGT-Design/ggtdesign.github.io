@@ -152,8 +152,10 @@ header {
 
 .uhren {
   display: flex;
-  align-decoration: none;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 38px;
 }
 
 .uhr1 {
@@ -163,8 +165,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 64px;
-  transform: scale(0.3);
+  transform: scale(0.25);
 }
 
 .ziffernblatt1 {
@@ -260,9 +261,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 64px;
-  margin-left: 32px;
-  transform: scale(0.3);
+  transform: scale(0.25);
 }
 
 .ziffernblatt2 {
