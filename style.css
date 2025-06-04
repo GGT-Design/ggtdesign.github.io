@@ -309,12 +309,12 @@ header {
 .sekundenzeiger {
   background-image: url('assets/t_sekundenzeiger_01.png');
   width: 36px;
-  height: 314px;
+  height: 310px;
   position: absolute;
   left: 452.5px;
   bottom: 455.5px;
-  transform: translateX(-18.5px), translateY(-15.5px);
-  transform-origin: center calc(100% - 15.5px);
+  transform: translateX(-18.5px), translateY(-19.5px);
+  transform-origin: center calc(100% - 19.5px);
 }
 
 section#start {
