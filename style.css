@@ -286,35 +286,32 @@ header {
 
 .stundenzeiger2 {
   background-image: url('assets/t_stundenzeiger_01.png');
-  width: 73px;
+  width: 72px;
   height: 216px;
   position: absolute;
-  left: 434.5px;
-  bottom: 443px;
-  transform: translateX(-36.5px), translateY(-28px);
-  transform-origin: center calc(100% - 28px);
+  left: 435px;
+  bottom: 442.5px;
+  transform-origin: center calc(100% - 28.5px);
 }
 
 .minutenzeiger2 {
   background-image: url('assets/t_minutenzeiger_01.png');
-  width: 39px;
-  height: 308px;
+  width: 38px;
+  height: 309px;
   position: absolute;
   left: 451.5px;
   bottom: 452px;
-  transform: translateX(19.5px), translateY(-19px);
-  transform-origin: center calc(100% - 19px);
+  transform-origin: center calc(100% - 18.8px);
 }
 
 .sekundenzeiger {
   background-image: url('assets/t_sekundenzeiger_01.png');
-  width: 36px;
-  height: 310px;
+  width: 37px;
+  height: 309px;
   position: absolute;
-  left: 452.5px;
-  bottom: 451.5px;
-  transform: translateX(-18.5px), translateY(-19.5px);
-  transform-origin: center calc(100% - 19.5px);
+  left: 453px;
+  bottom: 455.5px;
+  transform-origin: center calc(100% - 15.5px);
 }
 
 section#start {
