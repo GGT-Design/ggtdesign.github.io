@@ -312,7 +312,7 @@ header {
   height: 310px;
   position: absolute;
   left: 452.5px;
-  bottom: 455.5px;
+  bottom: 460.5px;
   transform: translateX(-18.5px), translateY(-19.5px);
   transform-origin: center calc(100% - 19.5px);
 }
