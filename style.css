@@ -391,6 +391,16 @@ section#start {
   margin-top: 64px;
 }
 
+.appstore {
+  width: 125px;
+  height: 38px;
+  margin-top: 16px;
+  background-image: url('assets/appstore.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: url('assets/cursor.svg'), auto;
+}
+
 .carousel {
   max-width: 100%;
   overflow: hidden;
@@ -803,3 +813,4 @@ textarea {
   text-align: center;
   cursor: url('assets/cursor.svg'), auto;
 }
+
